@@ -51,4 +51,11 @@ p strong {
 }
 
 
-
+.github-link {
+    color: #0366d6; /* GitHub-like blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+.github-link:hover {
+    text-decoration: underline;
+}

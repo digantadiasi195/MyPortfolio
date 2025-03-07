@@ -20,7 +20,7 @@
     margin: 0 10px; /* Adjusted margin for better spacing */
 }
 
-.footer-contact h3 {
+.footer-contact h3, .footer-social h3 {
     font-size: 1.6em; /* Slightly smaller font size */
     margin-bottom: 10px; /* Reduced margin */
     color: #ffffff; /* White color for headings */
@@ -49,12 +49,6 @@
     text-align: center;
 }
 
-.footer-social h3 {
-    font-size: 1.6em; /* Slightly smaller font size */
-    margin-bottom: 10px; /* Reduced margin */
-    color: #ffffff; /* White color for heading */
-}
-
 .footer-social .social-links {
     display: flex;
     justify-content: center; /* Center the links horizontally */
@@ -79,4 +73,25 @@
 
 .footer-bottom .heart {
     color: #ff4d4d; /* Red color for heart */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack contact and social sections vertically */
+        align-items: center; /* Center-align items */
+        text-align: center; /* Center-align text */
+    }
+
+    .footer-contact, .footer-social {
+        margin: 10px 0; /* Adjust margin for stacked layout */
+    }
+
+    .footer-social .social-links {
+        gap: 10px; /* Reduce gap between social links */
+    }
+
+    .footer-bottom {
+        font-size: 0.9em; /* Slightly smaller font size for small screens */
+    }
 }
